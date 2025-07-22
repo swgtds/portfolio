@@ -69,7 +69,7 @@
 
     --card: 0 0% 100%;
 
-    --primary: 250 47% 60%;
+    --primary: 207 56% 31%; /* #25607d in HSL */
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
@@ -81,7 +81,7 @@
 
     --card: 222 47% 8%;
 
-    --primary: 250 65% 65%;
+    --primary: 207 65% 40%; /* Slightly brighter version of #25607d */
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
@@ -138,9 +138,14 @@
   border: 1px solid transparent;
 }
 
+@utility gradient-primary {
+  background-image: linear-gradient(to right, #1e3a8a, #25607d);
+  @apply text-white;
+}
+
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+  @apply px-6 py-2 rounded-full gradient-primary font-medium 
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(37,96,125,0.5)]
          hover:scale-105 active:scale-95;
 }
 

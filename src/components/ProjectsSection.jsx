@@ -3,34 +3,33 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Portal",
+    description: "A minimal, modern portal for centralizing academic and utility tools with a One Dark Pro-inspired theme.",
+    image: "/projects/portal.png",
+    tags: ["Go", "Gorilla Websocket","React", "TailwindCSS",],
+    demoUrl: "https://p.swgtds.in",
+    githubUrl: "https://github.com/swgtds/portal",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "UReduce",
+    description: "Blazing fast, containerized URL shortener built with Golang and PostgreSQL, featuring a clean React frontend.",
+    image: "/projects/ureduce.png",
+    tags: ["Go", "React", "Docker", "PostgreSQL"],
+    demoUrl: "https://ureduce.swgtds.in",
+    githubUrl: "https://github.com/swgtds/UReduce",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "StumpVizz",
+    description: "Ad-free, high-quality cricket live streaming platform with real-time chat and clean UI.",
+    image: "/projects/stumpvizz.png",
+    tags: ["React", "Express", "Typescript", "PostgreSQL"],
+    demoUrl: "https://stumpvizz.vercel.app",
+    githubUrl: "https://github.com/swgtds/stumpvizz",
   },
 ];
+
 
 export const ProjectsSection = () => {
   return (
@@ -38,12 +37,11 @@ export const ProjectsSection = () => {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="bg-gradient-to-r from-blue-800 to-[#abcde4] bg-clip-text text-transparent"> Projects </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+        These are the projects I have poured my passion into, built with technologies I love & solving problems that matter.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,7 +98,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/swgtds"
           >
             Check My Github <ArrowRight size={16} />
           </a>

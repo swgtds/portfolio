@@ -1,6 +1,7 @@
 import {
   Instagram,
   Linkedin,
+  Github,
   Mail,
   MapPin,
   Phone,
@@ -33,12 +34,11 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Get In <span className="bg-gradient-to-r from-blue-800 to-[#abcde4] bg-clip-text text-transparent"> Touch</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+        Fresh, curious, and ready to build! If you’re looking for enthusiasm and fresh ideas, let’s connect and create something awesome together.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -56,14 +56,14 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:swagatadas003@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    swagatadas003@gmail.com
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
+              {/*<div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
@@ -76,15 +76,16 @@ export const ContactSection = () => {
                     +1 (123) 456-7890
                   </a>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
                   <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                  <a href = "https://www.google.com/maps/place/Kolkata,+West+Bengal/@22.5354704,88.3284705,46096m/data=!3m1!1e3!4m6!3m5!1s0x39f882db4908f667:0x43e330e68f6c2cbc!8m2!3d22.5743545!4d88.3628734!16zL20vMGN2dzk?hl=en&entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D" 
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                    Kolkata, West Bengal, India
                   </a>
                 </div>
               </div>
@@ -93,18 +94,21 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/swgtds/" target="_blank">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://github.com/swgtds" target="_blank">
+                  <Github />
+                </a>
+                <a href="https://x.com/swgtds_" target="_blank">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                {/*<a href="#" target="_blank">
                   <Instagram />
                 </a>
                 <a href="#" target="_blank">
                   <Twitch />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -130,7 +134,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Full Name"
                 />
               </div>
 
@@ -148,7 +152,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="example@email.com"
                 />
               </div>
 
@@ -165,7 +169,7 @@ export const ContactSection = () => {
                   name="message"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  placeholder="Type your message..."
                 />
               </div>
 
