@@ -7,6 +7,8 @@ const experiences = [
     date: "June 2025 - Present",
     description:
       "Improved SDK and UI Kit integration for real-time chat, reducing latency by 30% and accelerating deployments by 55% through CI/CD automation.",
+    link: "https://www.cometchat.com/",
+    technologies: ["JavaScript", "React", "Node.js", "Flutter", "GitHub Actions", "WebRTC"],
   },
   
   {
